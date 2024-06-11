@@ -5,8 +5,8 @@ import * as React from "react";
 
 export default function Home() {
   return (
-    <main className="container h-screen">
-      welcom 
-    </main>
+    <div className="home">
+      <h1>Welcome</h1> 
+    </div>
   );
 }
