@@ -1,14 +1,15 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Image from "next/image";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Header() {
   return (
     <header className="bg-white sticky top-0 z-10">
-      <div className="border-b border-gray-200 py-6">
-        <div className="container sm:flex justify-between items-center">
-          <div className="flex items-center justify-start">
+      <div className="border-b border-gray-200 py-4 sm:py-0">
+        <div className="container flex sm:flex justify-between items-center">
+          <div className="flex sm:flex-row items-center justify-start">
             <div className="">
               <Link
                 href="/"
@@ -22,12 +23,14 @@ export default function Header() {
                 />
               </Link>
             </div>
-            <div className="w-[300px] font-semibold">
+            <div
+              className="w-3/4 pl-2 font-semibold lg:text-base "
+              style={{ color: "#28186b" }}
+            >
               LITTLE ANGEL INSTITUTE OF PROFESSIONAL STUDIES
             </div>
           </div>
-
-          <div className="hidden lg:flex gap-4 text-gray-500">
+          <div className="w-full flex justify-end">
             <Navbar />
           </div>
         </div>

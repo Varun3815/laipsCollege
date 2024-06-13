@@ -5,12 +5,15 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className=" border-t border-gray-300 bg-gray-100">
-      <div className="container flex justify-between items-start py-3 mt-5">
+      <div className="container flex justify-between items-start py-3 mt-5 flex-col md:flex-row">
         <div className="">
-          <h4 className="block antialiased tracking-normal font-sans text-xl font-bold leading-snug text-inherit mb-2  ">
+          <h4
+            className="block antialiased tracking-normal font-sans text-xl font-bold leading-snug text-inherit mb-2  "
+            style={{ color: "#28186b" }}
+          >
             LITTLE ANGEL INSTITUTE OF PROFESSIONAL STUDIES
           </h4>
-          <p className="">
+          <p className="md:w-3/4 lg:w-full">
             One of the premier institutions for MBA and Law in India
           </p>
           <div className="flex items-center my-5 ">
@@ -165,7 +168,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-blue-600 text-white py-2 text-center">&copy; 2024 laipscollege.in All Rights Reserved.</div>
+      <div className="w-full  text-white py-2 text-center" style={{ backgroundColor: "#28186b" }}>
+        &copy; 2024 laipscollege.in All Rights Reserved.
+      </div>
     </footer>
   );
 }
