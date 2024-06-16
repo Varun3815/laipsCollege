@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className="bg-white sticky top-0 z-10">
       <div className="border-b border-gray-200 py-4 sm:py-0">
-        <div className="container flex sm:flex justify-between items-center">
+        <div className="container flex sm:flex justify-between items-center py-1">
           <div className="flex sm:flex-row items-center justify-start">
             <div className="">
               <Link

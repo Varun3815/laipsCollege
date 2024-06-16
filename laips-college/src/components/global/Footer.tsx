@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaPhone, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaLocationPin } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -80,7 +81,7 @@ export default function Footer() {
         <div className="">
           <div className="pt-6 md:ml-auto md:px-4 md:pt-0">
             <span className="text-md mb-4 block font-medium uppercase">
-              Explore
+              Activites
             </span>
             <ul className="list-unstyled">
               <li>
@@ -89,7 +90,7 @@ export default function Footer() {
                   rel="noreferrer"
                   className="block pb-2 text-sm font-normal leading-relaxed text-gray-600 transition-colors hover:text-primary"
                 >
-                  About The Institute
+                  Co-Curricular Activities
                 </a>
               </li>
               <li>
@@ -98,7 +99,7 @@ export default function Footer() {
                   rel="noreferrer"
                   className="block pb-2 text-sm font-normal leading-relaxed text-gray-600 transition-colors hover:text-primary"
                 >
-                  About Library
+                  Blog & News
                 </a>
               </li>
               <li>
@@ -107,7 +108,7 @@ export default function Footer() {
                   rel="noreferrer"
                   className="block pb-2 text-sm font-normal leading-relaxed text-gray-600 transition-colors hover:text-primary"
                 >
-                  Admission Procedure
+                  Annual Day
                 </a>
               </li>
               <li>
@@ -116,7 +117,7 @@ export default function Footer() {
                   rel="noreferrer"
                   className="block pb-2 text-sm font-normal leading-relaxed text-gray-600 transition-colors hover:text-primary"
                 >
-                  Affiliations
+                  Alumni Meet
                 </a>
               </li>
             </ul>
@@ -125,7 +126,7 @@ export default function Footer() {
         <div className="">
           <div className="pt-6 md:ml-auto md:px-4 md:pt-0">
             <span className="text-md mb-4 block font-medium uppercase">
-              Explore
+              CONTACT
             </span>
             <ul className="list-unstyled">
               <li>
@@ -134,7 +135,7 @@ export default function Footer() {
                   rel="noreferrer"
                   className="block pb-2 text-sm font-normal leading-relaxed text-gray-600 transition-colors hover:text-primary"
                 >
-                  About The Institute
+                   <span className="flex items-center"><FaLocationPin  className="mr-1"/> Jail Road, Teli Kheda, Mhow(M.P.)</span>
                 </a>
               </li>
               <li>
@@ -143,7 +144,7 @@ export default function Footer() {
                   rel="noreferrer"
                   className="block pb-2 text-sm font-normal leading-relaxed text-gray-600 transition-colors hover:text-primary"
                 >
-                  About Library
+                  <span className="flex items-center"><FaEnvelope  className="mr-1"/> admin@laipscollege.in</span>
                 </a>
               </li>
               <li>
@@ -152,7 +153,7 @@ export default function Footer() {
                   rel="noreferrer"
                   className="block pb-2 text-sm font-normal leading-relaxed text-gray-600 transition-colors hover:text-primary"
                 >
-                  Admission Procedure
+                  <span className="flex items-center"><FaPhone  className="mr-1"/> 7247282851</span>
                 </a>
               </li>
               <li>
@@ -161,14 +162,17 @@ export default function Footer() {
                   rel="noreferrer"
                   className="block pb-2 text-sm font-normal leading-relaxed text-gray-600 transition-colors hover:text-primary"
                 >
-                  Affiliations
+                  <span className="flex items-center"><FaWhatsapp className="mr-1"/> Whatsapp</span>
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div className="w-full  text-white py-2 text-center" style={{ backgroundColor: "#28186b" }}>
+      <div
+        className="w-full  text-white py-2 text-center"
+        style={{ backgroundColor: "#28186b" }}
+      >
         &copy; 2024 laipscollege.in All Rights Reserved.
       </div>
     </footer>

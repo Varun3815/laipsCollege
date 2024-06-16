@@ -8,7 +8,7 @@ export default function App({ children }: { children: React.ReactNode[] }) {
     <>
       <Topbar />
       <Header />
-      <main className="container h-screen my-4">{children}</main>
+      <main className=" ">{children}</main>
 
       <Footer />
     </>
