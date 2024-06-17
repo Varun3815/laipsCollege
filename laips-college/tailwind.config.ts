@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/img/banner-bg-01.svg')",
+      },
       colors: {
         "og":"#28186b",
         border: "hsl(var(--border))",

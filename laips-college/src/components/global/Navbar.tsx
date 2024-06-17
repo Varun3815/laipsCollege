@@ -28,7 +28,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li className="navbar__link">
-          <Link className="relative w-max group" href="/">
+          <Link className="relative w-max group" href="/about-us">
             <span>About Us</span>
             <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-full"></span>
           </Link>
@@ -67,19 +67,19 @@ export default function Navbar() {
           </DropdownMenu>
         </li>
         <li className="navbar__link">
-        <Link className="relative w-max group" href="/">
+        <Link className="relative w-max group" href="/infrastructure">
             <span>Infrasturcture</span>
             <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-full"></span>
           </Link>
         </li>
         <li className="navbar__link">
-          <Link className="relative w-max group" href="/">
+          <Link className="relative w-max group" href="/faculty">
             <span>Faculty</span>
             <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-full"></span>
           </Link>
         </li>
         <li className="navbar__link">
-          <Link className="relative w-max group" href="/">
+          <Link className="relative w-max group" href="/contact">
             <span>Contact</span>
             <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-full"></span>
           </Link>

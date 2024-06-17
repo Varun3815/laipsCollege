@@ -8,7 +8,7 @@ export default function MarqueeMain() {
       <div className="bg-og">
         <h2 className="text-sm px-2 py-3 uppercase"> Updates</h2>
       </div>
-      <Marquee pauseOnHover className="[--duration:50s] w-full bg-white ">
+      <Marquee pauseOnHover className="[--duration:10s] w-full bg-white ">
         <ul className="text-red-600 pr-2">
           <li className="inline after:content-['|'] after:px-2 after:text-black">
             Admission open in BA-LLB
