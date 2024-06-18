@@ -96,14 +96,14 @@ export default function Navbar() {
         </button>
       </div>
       {isOpen && (
-        <ul className="flex flex-col absolute top-[125px] bg-white px-3 left-0 basis-full items-start w-full h-screen">
-          <li className="navbar__link border-b border-gray-200 w-full my-1">
-            <Link className="relative" href="/">
+        <ul className="flex flex-col absolute top-[125px] bg-white px-3 left-0 basis-full items-start w-full h-[235px] md:top-[81px]">
+          <li className="navbar__link border-b border-gray-200 w-full my-2">
+            <Link className="relative" href="/" onClick={toggleNavbar}>
               Home
             </Link>
           </li>
           <li className="navbar__link border-b border-gray-200 w-full my-1">
-            <Link className="relative" href="/about-us">
+            <Link className="relative" href="/about-us" onClick={toggleNavbar}>
               About Us
             </Link>
           </li>
@@ -139,17 +139,17 @@ export default function Navbar() {
             </DropdownMenu>
           </li>
           <li className="navbar__link border-b border-gray-200 w-full my-1">
-            <Link className="relative" href="/infrastructure">
+            <Link className="relative" href="/infrastructure" onClick={toggleNavbar}>
               Infrastructure
             </Link>
           </li>
           <li className="navbar__link border-b border-gray-200 w-full my-1">
-            <Link className="relative" href="/faculty">
+            <Link className="relative" href="/faculty" onClick={toggleNavbar}>
               Faculty
             </Link>
           </li>
           <li className="navbar__link border-b border-gray-200 w-full my-1">
-            <Link className="relative" href="/contact">
+            <Link className="relative" href="/contact" onClick={toggleNavbar}>
               Contact
             </Link>
           </li>
