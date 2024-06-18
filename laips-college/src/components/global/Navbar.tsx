@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { RxArrowRight, RxHamburgerMenu } from "react-icons/rx";
+import { IoCloseOutline } from "react-icons/io5";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -89,14 +90,14 @@ export default function Navbar() {
       <div className="lg:hidden  sm:block">
         <button onClick={toggleNavbar}>
           {isOpen ? (
-            <RxArrowRight className="text-2xl" />
+            <IoCloseOutline className="text-2xl"/>
           ) : (
             <RxHamburgerMenu className="text-2xl" />
           )}
         </button>
       </div>
       {isOpen && (
-        <ul className="flex flex-col absolute top-[125px] bg-white px-3 left-0 basis-full items-start w-full h-[235px] md:top-[81px]">
+        <ul className="flex flex-col absolute top-[125px] bg-white px-3 left-0 basis-full items-start w-full h-screen md:top-[81px]">
           <li className="navbar__link border-b border-gray-200 w-full my-2">
             <Link className="relative" href="/" onClick={toggleNavbar}>
               Home

@@ -18,7 +18,7 @@ export default function Banner(props: any) {
               <BreadcrumbItem>
                 <BreadcrumbLink href="/" className="text-black hover:underline">Home</BreadcrumbLink>
               </BreadcrumbItem>
-              <BreadcrumbSeparator />
+              <BreadcrumbSeparator className="text-white"/>
               <BreadcrumbItem>
                 <BreadcrumbLink className="text-white font-semibold">{props.name}</BreadcrumbLink>
               </BreadcrumbItem>

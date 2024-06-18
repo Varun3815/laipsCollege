@@ -27,7 +27,8 @@ export default function Header() {
               className="w-3/4 pl-2 font-semibold lg:text-base "
               style={{ color: "#28186b" }}
             >
-              LITTLE ANGEL INSTITUTE OF PROFESSIONAL STUDIES
+              <Link href="/">  LITTLE ANGEL INSTITUTE OF PROFESSIONAL STUDIES</Link>
+             
             </div>
           </div>
           <div className="w-full flex justify-end">
