@@ -19,7 +19,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { FaEnvelope, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { FaLocationPin } from "react-icons/fa6";
 
-export default function Admission() {
+export default function Contact() {
   const form = useForm<z.infer<typeof contactusFormSchema>>({
     resolver: zodResolver(contactusFormSchema),
     defaultValues: {
@@ -29,9 +29,11 @@ export default function Admission() {
       message: "",
     },
   });
+
   const handleSubmit = (values: z.infer<typeof contactusFormSchema>) => {
     console.log({ values });
   };
+
   return (
     <>
       <Banner name="Contact Us" shortDesc="Submit your query" />
@@ -41,17 +43,17 @@ export default function Admission() {
             Thank you for your interest in joining our community.
           </p>
           <div className="pt-6 md:-ml-4 md:px-4 md:pt-5 ">
-            <p>
+            <div>
               <div className="block pb-2 text-sm font-normal leading-relaxed text-gray-600 transition-colors hover:text-primary mb-4">
                 <span className="flex items-center md:text-lg ">
                   <FaLocationPin className="mr-1" /> Jail Road, Teli Kheda,
                   Mhow(Madhya Pradesh), India
                 </span>
               </div>
-            </p>
+            </div>
             <p>
               <a
-                href="#"
+                href="mailto:admin@laipscollege.in"
                 rel="noreferrer"
                 className="block pb-2 text-sm font-normal leading-relaxed text-gray-600 transition-colors hover:text-primary"
               >
@@ -85,93 +87,101 @@ export default function Admission() {
                 height="450"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                className="w-full md:w-[600px]"
               ></iframe>
             </div>
           </div>
         </div>
-        <div className=" basis-1/2">
+        <div className="basis-1/2">
           <span className="text-red-500 text-xs text-right block mb-2">
-            * All field required.
+            * All fields required.
           </span>
           <div className="border border-gray-300 rounded-md p-5">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(handleSubmit)}
-                className=" w-full flex flex-col gap-4"
+                className="w-full flex flex-col gap-4"
               >
                 <FormField
                   control={form.control}
                   name="name"
-                  render={({ field }) => {
-                    return (
-                      <FormItem>
-                        <FormLabel className="font-semibold">
-                          Name <span className="text-red-500 text-xs">*</span>
-                        </FormLabel>
-                        <FormControl>
-                          <Input {...field} placeholder="Name" type="text" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    );
-                  }}
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="font-semibold">
+                        Name <span className="text-red-500 text-xs">*</span>
+                      </FormLabel>
+                      <FormControl>
+                        <Input
+                          {...field}
+                          placeholder="Name"
+                          type="text"
+                          aria-label="Name"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
                 />
                 <FormField
                   control={form.control}
                   name="mobileNo"
-                  render={({ field }) => {
-                    return (
-                      <FormItem>
-                        <FormLabel className="font-semibold">
-                          Mobile No.{" "}
-                          <span className="text-red-500 text-xs">*</span>
-                        </FormLabel>
-                        <FormControl>
-                          <Input
-                            {...field}
-                            placeholder="Mobile No."
-                            type="text"
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    );
-                  }}
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="font-semibold">
+                        Mobile No.{" "}
+                        <span className="text-red-500 text-xs">*</span>
+                      </FormLabel>
+                      <FormControl>
+                        <Input
+                          {...field}
+                          placeholder="Mobile No."
+                          type="text"
+                          aria-label="Mobile No."
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
                 />
                 <FormField
                   control={form.control}
                   name="email"
-                  render={({ field }) => {
-                    return (
-                      <FormItem>
-                        <FormLabel className="font-semibold">
-                          Email <span className="text-red-500 text-xs">*</span>
-                        </FormLabel>
-                        <FormControl>
-                          <Input {...field} placeholder="Email." type="email" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    );
-                  }}
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="font-semibold">
+                        Email <span className="text-red-500 text-xs">*</span>
+                      </FormLabel>
+                      <FormControl>
+                        <Input
+                          {...field}
+                          placeholder="Email"
+                          type="email"
+                          aria-label="Email"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
                 />
                 <FormField
                   control={form.control}
                   name="message"
-                  render={({ field }) => {
-                    return (
-                      <FormItem>
-                        <FormLabel className="font-semibold">
-                          Address{" "}
-                          <span className="text-red-500 text-xs">*</span>
-                        </FormLabel>
-                        <FormControl>
-                          <Textarea {...field} placeholder="Message" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    );
-                  }}
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="font-semibold">
+                        Address{" "}
+                        <span className="text-red-500 text-xs">*</span>
+                      </FormLabel>
+                      <FormControl>
+                        <Textarea
+                          {...field}
+                          placeholder="Address"
+                          aria-label="Address"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
                 />
                 <Button type="submit" className="w-1/2">
                   Submit

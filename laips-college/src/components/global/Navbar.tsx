@@ -92,7 +92,7 @@ export default function Navbar() {
         </button>
       </div>
       {isOpen && (
-        <ul className="flex flex-col absolute top-[125px] bg-white px-3 left-0 basis-full items-start w-full h-screen md:top-[81px]">
+        <ul className="flex flex-col absolute top-[89px] bg-white px-3 left-0 basis-full items-start w-full h-screen md:top-[81px]">
           <li className="navbar__link border-b border-gray-200 w-full my-2">
             <Link className="relative" href="/" onClick={toggleNavbar}>
               Home
