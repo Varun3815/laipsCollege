@@ -13,6 +13,7 @@ export default function Footer() {
             style={{ color: "#28186b" }}
           >
             LITTLE ANGEL INSTITUTE OF PROFESSIONAL STUDIES
+            <i className="block text-sm text-right font-normal">(Groups of Institues)</i>
           </h4>
           <p className="md:w-3/4 lg:w-full">
             One of the premier institutions for MBA and Law in India
